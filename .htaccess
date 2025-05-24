@@ -10,7 +10,7 @@ RewriteBase /
 # RewriteCond %{HTTPS} off
 # RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-# Clean URLs - remove .php extension (optional)
+# Clean URLs - remove .php extension
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^(.+)$ $1.php [L,QSA]
@@ -45,3 +45,7 @@ Options -Indexes
 
 # Set default index file
 DirectoryIndex index.php
+
+php_flag display_errors On
+php_flag display_startup_errors On
+php_value error_reporting 32767
