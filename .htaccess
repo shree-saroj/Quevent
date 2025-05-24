@@ -1,0 +1,47 @@
+# Enable URL rewriting
+RewriteEngine On
+RewriteBase /
+
+# For Subbase Use
+# RewriteBase /event-management-system/
+
+# Redirect to HTTPS (optional, if using SSL)
+# Uncomment the lines below if your server supports SSL
+# RewriteCond %{HTTPS} off
+# RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Clean URLs - remove .php extension (optional)
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.+)$ $1.php [L,QSA]
+
+# Prevent access to sensitive directories
+RedirectMatch 403 ^/config/
+RedirectMatch 403 ^/includes/
+RedirectMatch 403 ^/sql/
+
+# For Subbase Use
+# RedirectMatch 403 ^/event-management-system/config/
+
+
+# Deny direct access to .php files inside includes/
+
+<FilesMatch "\.(php)$">
+# For Subbase Use
+#<If "%{REQUEST_URI} =~ m#^/event-management-system/includes/#">
+    <If "%{REQUEST_URI} =~ m#^/includes/#">
+        Require all denied
+    </If>
+</FilesMatch>
+
+# Disable directory browsing
+Options -Indexes
+
+# Restrict access to .htaccess itself
+<Files .htaccess>
+    Order Allow,Deny
+    Deny from all
+</Files>
+
+# Set default index file
+DirectoryIndex index.php
