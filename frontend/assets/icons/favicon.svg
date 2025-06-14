@@ -1,0 +1,12 @@
+<svg viewBox="0 10 200 165" xmlns="http://www.w3.org/2000/svg">
+  <rect x="25" y="40" width="150" height="135" rx="15" fill="#3EC3F4"/>
+  <path d="M25,40 
+           a15,15 0 0 1 15,-15 
+           h120 
+           a15,15 0 0 1 15,15 
+           v25 
+           h-150 
+           z" fill="#4D5DFB"/>
+  <rect x="50" y="10" width="15" height="30" rx="7" fill="#4D5DFB"/>
+  <rect x="135" y="10" width="15" height="30" rx="7" fill="#4D5DFB"/>
+</svg>
