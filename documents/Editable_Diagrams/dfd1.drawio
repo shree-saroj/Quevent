@@ -1,0 +1,142 @@
+<mxfile host="65bd71144e">
+    <diagram id="UTCprgTg-0bkJ09CjTXO" name="DFD Level 1">
+        <mxGraphModel dx="1207" dy="866" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="65" value="User" style="shape=ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=16;fontStyle=1;shadow=1;" vertex="1" parent="1">
+                    <mxGeometry x="18" y="350" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="66" value="Admin" style="shape=ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=16;fontStyle=1;shadow=1;" vertex="1" parent="1">
+                    <mxGeometry x="408" y="510" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="67" value="1.0&#xa;Register/Login" style="shape=process;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=14;fontStyle=1;shadow=1;" vertex="1" parent="1">
+                    <mxGeometry x="238" y="150" width="150" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="68" value="2.0&#xa;Browse Events" style="shape=process;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=14;fontStyle=1;shadow=1;" vertex="1" parent="1">
+                    <mxGeometry x="238" y="260" width="150" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="71" value="5.0&#xa;Admin Panel" style="shape=process;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=14;fontStyle=1;shadow=1;" vertex="1" parent="1">
+                    <mxGeometry x="693" y="355" width="150" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="72" value="D1: User DB" style="shape=datastore;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;fontStyle=1;shadow=1;" vertex="1" parent="1">
+                    <mxGeometry x="493" y="150" width="130" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="73" value="D2: Event DB" style="shape=datastore;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;fontStyle=1;shadow=1;" vertex="1" parent="1">
+                    <mxGeometry x="493" y="260" width="130" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="76" value="User Credentials" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeWidth=2;strokeColor=#6c8ebf;fontSize=11;fontColor=#6c8ebf;" edge="1" parent="1" source="65" target="67">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="160" y="390"/>
+                            <mxPoint x="160" y="190"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="77" value="Browse Request" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeWidth=2;strokeColor=#6c8ebf;fontSize=11;fontColor=#6c8ebf;" edge="1" parent="1" source="65" target="68">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="80" value="Store User Data" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeWidth=2;strokeColor=#9673a6;fontSize=11;fontColor=#9673a6;" edge="1" parent="1" target="72">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="373" y="190" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="81" value="Query Events" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeWidth=2;strokeColor=#9673a6;fontSize=11;fontColor=#9673a6;" edge="1" parent="1" target="73">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="373" y="300" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="84" value="Authentication Result" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeWidth=2;strokeColor=#82b366;fontSize=11;fontColor=#82b366;dashed=1;" edge="1" parent="1" source="72">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="373" y="190" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="558" y="250"/>
+                            <mxPoint x="373" y="250"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="85" value="Event Information" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeWidth=2;strokeColor=#82b366;fontSize=11;fontColor=#82b366;dashed=1;" edge="1" parent="1" source="73">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="373" y="300" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="558" y="380"/>
+                            <mxPoint x="373" y="380"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="88" value="Admin Commands" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeWidth=2;strokeColor=#b85450;fontSize=11;fontColor=#b85450;" edge="1" parent="1" target="71">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="513" y="550" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="89" value="Manage Users" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeWidth=2;strokeColor=#d6b656;fontSize=11;fontColor=#d6b656;" edge="1" parent="1" source="71" target="72">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="663" y="395"/>
+                            <mxPoint x="663" y="190"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="90" value="Manage Events" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeWidth=2;strokeColor=#d6b656;fontSize=11;fontColor=#d6b656;" edge="1" parent="1" source="71" target="73">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="593" y="395"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="93" value="User Reports" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeWidth=2;strokeColor=#d6b656;fontSize=11;fontColor=#d6b656;dashed=1;" edge="1" parent="1" source="72" target="71">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="94" value="Event Reports" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeWidth=2;strokeColor=#d6b656;fontSize=11;fontColor=#d6b656;dashed=1;" edge="1" parent="1" source="73" target="71">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="97" value="Login Status" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeWidth=2;strokeColor=#6c8ebf;fontSize=11;fontColor=#6c8ebf;dashed=1;" edge="1" parent="1" source="67" target="65">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="98" value="Event Details" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeWidth=2;strokeColor=#6c8ebf;fontSize=11;fontColor=#6c8ebf;dashed=1;" edge="1" parent="1" source="68" target="65">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="101" value="System Dashboard" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeWidth=2;strokeColor=#b85450;fontSize=11;fontColor=#b85450;dashed=1;" edge="1" parent="1" source="71">
+                    <mxGeometry x="-0.1549" relative="1" as="geometry">
+                        <mxPoint x="453" y="510" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="768" y="470"/>
+                            <mxPoint x="453" y="470"/>
+                        </Array>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="106" value="Data Flow Diagram Level 1 - Event Management System" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontStyle=1;" vertex="1" parent="1">
+                    <mxGeometry x="210" y="60" width="400" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="107" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;strokeWidth=1;" vertex="1" parent="1">
+                    <mxGeometry x="18" y="460" width="350" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="108" value="Legend" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;" vertex="1" parent="1">
+                    <mxGeometry x="18" y="470" width="350" height="25" as="geometry"/>
+                </mxCell>
+                <mxCell id="109" value="External Entity" style="shape=ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" vertex="1" parent="1">
+                    <mxGeometry x="38" y="495" width="90" height="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="110" value="Process" style="shape=process;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;" vertex="1" parent="1">
+                    <mxGeometry x="148" y="495" width="80" height="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="111" value="Data Store" style="shape=datastore;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;" vertex="1" parent="1">
+                    <mxGeometry x="248" y="495" width="90" height="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="112" value="Data Flow" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeWidth=2;strokeColor=#666666;fontSize=12;" edge="1" parent="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="48" y="555" as="sourcePoint"/>
+                        <mxPoint x="118" y="555" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="113" value="Return Flow" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeWidth=2;strokeColor=#666666;fontSize=12;dashed=1;" edge="1" parent="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="178" y="555" as="sourcePoint"/>
+                        <mxPoint x="258" y="555" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
