@@ -7,6 +7,8 @@
 </footer>
 </div>
 </div>
+<script src="/assets/plugins/mazor/extensions/@fortawesome/fontawesome-free/js/all.min.js"></script>
+<script src="/assets/plugins/mazor/extensions/toastify-js/src/toastify.js"></script>
 <script src="/assets/plugins/mazor/static/js/components/dark.js"></script>
 <script src="/assets/plugins/mazor/extensions/perfect-scrollbar/perfect-scrollbar.min.js"></script>
 <script src="/assets/plugins/mazor/compiled/js/app.js"></script>

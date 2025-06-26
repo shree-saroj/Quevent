@@ -5,9 +5,6 @@ require_once(ADMIN_TEMPLATE_PATH . 'layout.php');
 
 <link rel="stylesheet" href="/assets/plugins/mazor/extensions/filepond/filepond.min.css" />
 <link rel="stylesheet" href="/assets/plugins/mazor/extensions/filepond-plugin-image-preview/filepond-plugin-image-preview.min.css" />
-<link
-  rel="stylesheet"
-  href="/assets/plugins/mazor/extensions/toastify-js/src/toastify.css" />
 <div id="main-content">
   <div class="page-content">
     <section class="row">
@@ -187,9 +184,13 @@ require_once(ADMIN_TEMPLATE_PATH . 'layout.php');
 </div>
 <script src="/assets/plugins/mazor/extensions/filepond/filepond.min.js"></script>
 <script src="/assets/plugins/mazor/extensions/filepond-plugin-image-preview/filepond-plugin-image-preview.min.js"></script>
-<script src="/assets/plugins/mazor/extensions/toastify-js/src/toastify.js"></script>
 <script type="text/javascript">
   $(document).ready(function() {
+    initializeFilePond();
+  });
+
+  function initializeFilePond() {
+
     FilePond.registerPlugin(
       FilePondPluginImagePreview,
     )
@@ -212,7 +213,6 @@ require_once(ADMIN_TEMPLATE_PATH . 'layout.php');
       }
     );
 
-
     const stampPond = FilePond.create(
       document.querySelector('#inpOrgStampInput'), {
         credits: null,
@@ -231,6 +231,6 @@ require_once(ADMIN_TEMPLATE_PATH . 'layout.php');
         labelIdle: 'Drop stamp here or click to upload',
       }
     );
-  });
+  }
 </script>
 <?php require_once(ADMIN_TEMPLATE_PATH . 'footer.php'); ?>

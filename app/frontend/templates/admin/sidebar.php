@@ -87,41 +87,18 @@
                         <li class="submenu-item">
                             <a href="/admin/departmentsetup.php" class="submenu-link">Department Setup</a>
                         </li>
-
-                        <li class="submenu-item">
-                            <a href="form-element-select.html" class="submenu-link">Select</a>
-                        </li>
-
-                        <li class="submenu-item">
-                            <a href="form-element-radio.html" class="submenu-link">Radio</a>
-                        </li>
-
-                        <li class="submenu-item">
-                            <a href="form-element-checkbox.html" class="submenu-link">Checkbox</a>
-                        </li>
-
-                        <li class="submenu-item">
-                            <a href="form-element-textarea.html" class="submenu-link">Textarea</a>
-                        </li>
                     </ul>
-                </li>
-
-                <li class="sidebar-item">
-                    <a href="form-layout.html" class="sidebar-link">
-                        <i class="bi bi-file-earmark-medical-fill"></i>
-                        <span>Form Layout</span>
-                    </a>
                 </li>
 
                 <li class="sidebar-item has-sub">
                     <a href="#" class="sidebar-link">
-                        <i class="bi bi-journal-check"></i>
-                        <span>Form Validation</span>
+                        <i class="bi bi-person-badge-fill"></i>
+                        <span>Manage Users</span>
                     </a>
 
                     <ul class="submenu">
                         <li class="submenu-item">
-                            <a href="form-validation-parsley.html" class="submenu-link">Parsley</a>
+                            <a href="/admin/usergroups.php" class="submenu-link">User Groups</a>
                         </li>
                     </ul>
                 </li>

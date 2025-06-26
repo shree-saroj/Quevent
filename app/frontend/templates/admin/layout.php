@@ -18,6 +18,8 @@
   <link rel="stylesheet" href="/assets/plugins/mazor/compiled/css/app-dark.css" />
   <link rel="stylesheet" href="/assets/plugins/mazor/compiled/css/iconly.css" />
   <link rel="stylesheet" href="/assets/css/custom.css" />
+  <link rel="stylesheet" href="/assets/plugins/mazor/extensions/@fortawesome/fontawesome-free/css/all.min.css">
+  <link rel="stylesheet" href="/assets/plugins/mazor/extensions/toastify-js/src/toastify.css" />
 </head>
 
 <body>
