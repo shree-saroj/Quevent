@@ -5,6 +5,7 @@ require_once(ADMIN_TEMPLATE_PATH . 'layout.php');
 
 <link rel="stylesheet" href="/assets/plugins/mazor/extensions/filepond/filepond.min.css" />
 <link rel="stylesheet" href="/assets/plugins/mazor/extensions/filepond-plugin-image-preview/filepond-plugin-image-preview.min.css" />
+
 <div id="main-content">
   <div class="page-content">
     <section class="row">

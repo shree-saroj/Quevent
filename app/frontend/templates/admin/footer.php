@@ -7,11 +7,15 @@
 </footer>
 </div>
 </div>
+<script src="/assets/plugins/mazor/static/js/components/dark.js"></script>
 <script src="/assets/plugins/mazor/extensions/@fortawesome/fontawesome-free/js/all.min.js"></script>
 <script src="/assets/plugins/mazor/extensions/toastify-js/src/toastify.js"></script>
-<script src="/assets/plugins/mazor/static/js/components/dark.js"></script>
+<script src="/assets/plugins/mazor/extensions/sweetalert2/sweetalert2.min.js"></script>
 <script src="/assets/plugins/mazor/extensions/perfect-scrollbar/perfect-scrollbar.min.js"></script>
 <script src="/assets/plugins/mazor/compiled/js/app.js"></script>
+<script src="/assets/plugins/mazor/extensions/flatpickr/flatpickr.min.js"></script>
+<script src="/assets/js/custom.js"></script>
+<script src="/assets/plugins/xlxs/xlsx.js"></script>
 <script type="text/javascript">
   $(document).ready(function() {
     document.getElementById('copyrightyear').textContent = new Date().getFullYear();

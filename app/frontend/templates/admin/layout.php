@@ -20,6 +20,8 @@
   <link rel="stylesheet" href="/assets/css/custom.css" />
   <link rel="stylesheet" href="/assets/plugins/mazor/extensions/@fortawesome/fontawesome-free/css/all.min.css">
   <link rel="stylesheet" href="/assets/plugins/mazor/extensions/toastify-js/src/toastify.css" />
+  <link rel="stylesheet" href="/assets/plugins/mazor/extensions/sweetalert2/sweetalert2.min.css">
+  <link rel="stylesheet" href="/assets/plugins/mazor/extensions/flatpickr/flatpickr.min.css">
 </head>
 
 <body>
